@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function createPhoneNumber(numbers){
+   let first = numbers.splice(0,3);
+  first = first.join('');
+  let second = numbers.splice(0,3);
+  second = second.join('');
+  let final = numbers.splice(0,4);
+  final = final.join('');
+  let result = `(${first}) ${second}-${final}`;
+  return result;
+}
+</script>
+
+</body>
+</html>

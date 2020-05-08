@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function iqTest(numbers){
+   let arrOfEven = [];
+  let arrOfAdd = [];
+  let arr = numbers.split(' ').map( (item) => +item);
+   for(let number of arr){
+    if(number % 2 == 0){
+         arrOfEven.push(number);
+    }
+    else{
+      arrOfAdd.push(number);
+    }  
+   }
+   let result = arrOfEven.length == 1 ? arr.indexOf(arrOfEven[0],0) : arr.indexOf(arrOfAdd[0],0);
+   return result + 1;
+}
+
+</script>
+
+</body>
+</html>

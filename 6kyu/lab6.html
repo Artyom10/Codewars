@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function arrayDiff(arrFirst, arrSecond) {
+    let resultArr = [];
+for(let i = 0; i < arrFirst.length; i++){
+ if( arrSecond.includes(arrFirst[i]) == false){
+  resultArr.push(arrFirst[i]);
+    }
+  }
+  return resultArr;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function order(words){
+   let arrOfNumbers = ['1','2','3','4','5','6','7','8','9'];
+  let arr = words.split(' ');
+  let resultArr = [];
+  for(let i = 0; i < arrOfNumbers.length; i++){
+    for(let q = 0; q < arr.length; q++){
+          if( arr[q].includes(arrOfNumbers[i])){
+            resultArr.push(arr[q]);
+          }  
+      }
+  }
+  return resultArr.join(' ');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function findMissingLetter(arr){
+let arrOfNumbers = arr.map( (item) => item.charCodeAt(0));
+  for(let i = 0; i < arrOfNumbers.length; i++){
+            if( arrOfNumbers[i] + 1 != arrOfNumbers[i+1]){
+              let missWord = String.fromCharCode(arrOfNumbers[i] + 1);
+              return missWord;
+            }
+          }
+}
+
+</script>
+
+</body>
+</html>
