@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function alphabetPosition(text) {
+  let arrOfNum = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+  let arrOfLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  let strOfLetters = 'abcdefghijklmnopqrstuvwxyz';
+  text = text.toLowerCase();
+  let arr = text.split('');
+  for(let i = 0; i < arr.length; i++){
+  	i
+  }
+
+}
+
+function alphabetPosition1(text) {
+  let arrOfNum = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
+  let arrOfLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  let strOfLetters = 'abcdefghijklmnopqrstuvwxyz';
+  text = text.toLowerCase();
+  let arr = text.split('');
+  let result = [];
+  for(let i = 0; i < arr.length; i++){
+  	for(let y = 0; y < arrOfLetters.length; y++){
+  		if( arr[i] == arrOfLetters[y]){
+           result.push(arrOfNum[y]);
+  		}
+  	}
+  }
+  return result.join(' ');
+}
+
+console.log(alphabetPosition1("c4a!d&y"));
+</script>
+
+</body>
+</html>
