@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function isIsogram(str){
+  if( str == ''){
+   return true;
+  }
+  else{
+  let arr = str.toLowerCase().split('');
+ let check = Array.from(new Set(arr));
+ return check.length == str.length ? true : false;
+
+   }
+}
+
+console.log(isIsogram("aba"));
+</script>
+
+</body>
+</html>

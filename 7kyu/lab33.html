@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+ <body>
+  <script>
+function completeSeries(arr) {
+ let result = [];
+ let sortedArr = arr.sort( (a,b) => a - b );
+ let checkArray = new Set(Array.from(sortedArr));
+   if( checkArray.size != sortedArr.length){
+   return [0];
+  }
+  else{
+
+    let maxNumber = arr[arr.length-1];
+    for(let i = 0; i < maxNumber+1; i++){
+         result.push(i);
+    }
+    return result;
+  }
+}
+
+console.log(completeSeries([1,4,4,6]));
+
+  </script>
+
+ </body>
+</html>

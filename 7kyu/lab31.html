@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+function solve(a,b){
+let firstArr = a.split('');
+let secondArr = b.split('');
+let result = [...firstArr,...secondArr];
+return result.filter( (el) => (firstArr.includes(el) && !secondArr.includes(el)) || (!firstArr.includes(el) && secondArr.includes(el))).join('');
+
+}
+
+console.log(solve("xyab","xzca"));
+</script>
+
+</body>
+</html>

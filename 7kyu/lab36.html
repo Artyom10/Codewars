@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+ <body>
+  <script>
+function halvingSum(n) {
+	let test = [];
+	let sum = n;
+	let i = 2;
+    while(true){
+    	if(n/i > 1){
+    		test.push(n/i);
+    		if( n)
+         sum += Math.(n/i);
+          i *= 2;
+    	}
+    	else{
+    		break;
+    	}
+    }
+    return sum;
+}
+console.log(halvingSum(25));
+
+  </script>
+
+ </body>
+</html>

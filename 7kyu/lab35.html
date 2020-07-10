@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+ <body>
+  <script>
+function modifiedSum(arr, n) {
+  let secondArrSum = arr.map( (el) => el**n).reduce( (sum,currentElem)=> sum += currentElem,0);
+  let firstArrSum = arr.reduce( (sum,currentElem)=> sum += currentElem, 0);
+  return secondArrSum - firstArrSum;
+}
+console.log(modifiedSum([1,2,3],3));
+  </script>
+
+ </body>
+</html>

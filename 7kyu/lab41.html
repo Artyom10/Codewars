@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+ <body>
+  <script>
+function deleteLetters(str){
+	let stringOfLetter = 'aeiouyAEIOUY';
+	let arr = str.split('').filter( (elem) => !stringOfLetter.includes(elem));
+	return arr.join('');
+}
+
+console.log(deleteLetters('This website is for losers LOL'));
+  </script>
+
+ </body>
+</html>

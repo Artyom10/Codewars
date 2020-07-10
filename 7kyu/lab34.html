@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+ <body>
+  <script>
+function myLanguages(results) {
+	let arr = [];
+	let test = [];
+let realObject = Object.values(results).sort( (a,b) => a-b);	
+     for( let number of Object.entries(results)){
+   	if( number[1] >= 60 ){
+            arr.push(number[0]); 
+     	}
+     }
+
+  for(let i = 0; i < Object.entries(results).length; i++){
+         te
+  }
+
+
+     return arr;
+
+
+}
+
+console.log(myLanguages({"Hindi" : 60, "Greek" : 71, "Dutch" : 93, "Something" : 50}));
+  </script>
+
+ </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+String.prototype.toJadenCase = function () {
+         let arr = this.split(' '); 
+         let result = [];
+         for(let i = 0; i < arr.length; i++){
+         	let arrOfWord = arr[i].split('');
+             let firstWord = arrOfWord[0].toUpperCase();
+                result.push(firstWord + arr[i].slice(1));
+         }
+         return result.join(' ');
+};
+
+
+
+
+
+let str = "How can mirrors be real if our eyes aren't real";
+console.log( str.toJadenCase());
+
+</script>
+
+</body>
+</html>

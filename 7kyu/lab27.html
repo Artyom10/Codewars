@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+var isSquare = function(n){
+   if( n <= -1){
+   	return false;
+   }
+   else if(n == 0){
+   	return true;
+   }
+   else{
+   	let number = Math.round(Math.sqrt(n));
+   	 if( number * number == n){
+   	 	return true;
+   	 }
+   	 else{
+   	 	return false;
+   	 }
+   }
+}
+
+console.log(isSquare(53));
+</script>
+
+</body>
+</html>
